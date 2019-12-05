@@ -42,11 +42,11 @@ $(function(){
                           url : urls, /*获取URL，可加上来自分享到QQ标识，方便统计*/
                           desc:'',
                           //title : '新玩法，再不来你就out了！', /*分享标题(可选)*/
-                          title:'小不点好学堂',
+                          title:'标题',
                           summary :text, /*分享摘要(可选)*/
                           pics :imgs, /*分享图片(可选)*/
                           flash : '', /*视频地址(可选)*/
-                          site : "小不点好学堂", /*分享来源(可选) 如：QQ分享*/
+                          site : "来源", /*分享来源(可选) 如：QQ分享*/
                           style : '201',
                           width : 32,
                           height : 32
@@ -63,7 +63,7 @@ $(function(){
                      }
                     
                     var shareData = {
-                        title: '小不点好学堂',
+                        title: '标题',
                         desc:text,
                         // 如果是微信该link的域名必须要在微信后台配置的安全域名之内的。
                         link: urls,
@@ -99,7 +99,7 @@ $(function(){
                       if(os.isAndroid || os.isPhone||os.isTablet){ 
                            if(ua.match(/MicroMessenger/i) == 'micromessenger'){
                               $.ajax({
-                                url:"http://s.coolndns.com/new/wechatshare",
+                                url:"http://..........com/new/wechatshare",
                                 type:"get",
                                 data:{
                                    url:window.location.href
@@ -125,7 +125,7 @@ $(function(){
                                           'onMenuShareQZone',
                                       ]
                                   });
-                                  var wstitle = "小不点好学堂";
+                                  var wstitle = "来源";
                                   var wsdesc =text;
                                   var wslink =urls;
                                   var wsimg =localStorage.getItem("column");
@@ -208,7 +208,7 @@ $(function(){
                   localStorage.setItem("erurl",urll)
                    var text=localStorage.getItem("column_des")
                     var shareData = {
-                        title: '小不点好学堂',
+                        title: '标题',
                         desc:text,
                         // 如果是微信该link的域名必须要在微信后台配置的安全域名之内的。
                         link: urll,
@@ -248,7 +248,7 @@ $(function(){
                     if(os.isAndroid || os.isPhone||os.isTablet){ 
                          if(ua.match(/MicroMessenger/i) == 'micromessenger'){
                               $.ajax({
-                                url:"http://s.coolndns.com/new/wechatshare",
+                                url:"http://.......com/new/wechatshare",
                                 type:"get",
                                 data:{
                                    url:window.location.href
@@ -274,7 +274,7 @@ $(function(){
                                           'onMenuShareQZone',
                                       ]
                                   });
-                                  var wstitle = "小不点好学堂";
+                                  var wstitle = "来源";
                                   var wsdesc =text;
                                   var wslink =urll;
                                   var wsimg =localStorage.getItem("column");
